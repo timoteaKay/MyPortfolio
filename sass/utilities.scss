@@ -1,0 +1,29 @@
+// Universal spacing and sizing.
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// My Brand Identity Colors.
+$primary-color: #3f0113 !default; // Dark Red
+$accent-color: #84563b !default; // Brown
+$highlight-color: #c7a183 !default; // Light Brown
+$depth-color: #0f060b !default; // Very Dark Brown
+$cta-color: #cc5500 !default; // Vibrant Orange
+
+// Removing element defaults.
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
