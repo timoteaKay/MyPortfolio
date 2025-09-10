@@ -1,0 +1,12 @@
+At 28th January, 2025:
+
+1. Use the Text Sparkle Effect for the Main Subheaders. DONE
+REVISED: At 2nd February, 2025, 
+1. Use the Text Gradient Effect for the mini subheaders. DONE 
+
+At 29th January, 2025: 
+2. Use the current rain effect to display a welcome 
+  message to the users. 
+3. Use the wave effect for all mini subheaders.  ERROR
+4. Apply the wave-text to the main btn in header content. DONE
+5. Use the gradient color change for the text WEB DEVELOPER in header content. DONE

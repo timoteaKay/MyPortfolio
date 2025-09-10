@@ -1,23 +1,14 @@
 {
-  "name": "portfolio",
+  "name": "portfolio-website",
   "version": "1.0.0",
+  "description": "Portfolio Website",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass sass/main.scss dist/src/styles.css -w"
+    "compile:sass": "sass scss/main.scss dist/css/style.css -w"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/timoteaKay/portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Accurate A",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/timoteaKay/portfolio/issues"
-  },
-  "homepage": "https://github.com/timoteaKay/portfolio#readme",
-  "description": "",
-  "devDependencies": {
-    "sass": "^1.91.0"
+  "dependencies": {
+    "sass": "^1.83.0"
   }
 }

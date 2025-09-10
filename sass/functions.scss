@@ -1,9 +1,0 @@
-// consistent margin and padding for elements
-@function spacing($multiplier) {
-  @return 10px * $multiplier;
-}
-
-// // unit conversion to rem
-// @function rem($px, $base: 16) {
-//   @return ($px / $base) * 1rem;
-// }
