@@ -286,21 +286,21 @@ document.addEventListener("DOMContentLoaded", function () {
   function validateForm() {
     // Enable button only if all fields are filled & email format is correct
 
-    // For nameValue Validation
+    // For name Validation
     if (name.checkValidity()) {
       name.style.borderColor = "green";
     } else {
       name.style.borderColor = "red";
     }
 
-    // For phoneValue Validation
+    // For phone Validation
     if (phone.checkValidity()) {
       phone.style.borderColor = "green";
     } else {
       phone.style.borderColor = "red";
     }
 
-    // For emailValue Validation
+    // For email Validation
     if (email.checkValidity()) {
       email.style.borderColor = "green";
     } else {
@@ -315,6 +315,18 @@ document.addEventListener("DOMContentLoaded", function () {
       submitBtn.disabled = true;
       submitBtn.classList.remove("btn-secondary");
     }
+
+    // reporting validation
+    if (form.checkValidity()) {
+      document.querySelector(".kyc-content h4").textContent =
+        "Your Details are correct, Kindly submit the form";
+      document.querySelector("#form legend").textContent =
+        " " + "Details Valid" + " ";
+    } else {
+      document.querySelector(".kyc-content h4").textContent =
+        "Please fix the errors before submitting";
+      form.reportValidity();
+    }
   }
 
   submitBtn.addEventListener("click", (e) => {
@@ -326,19 +338,10 @@ document.addEventListener("DOMContentLoaded", function () {
     // collect the text control value
     recipientName = document.querySelector(".recipient-name");
     recipientName.textContent = name.value.trim();
+    recipientName.style.textTransform = "capitalize";
   });
   // Listen to input changes in the form fields
   form.addEventListener("input", validateForm);
-  form.addEventListener("input", () => {
-    if (form.checkValidity()) {
-      document.querySelector(".kyc-content h4").textContent =
-        "Your Details are correct, Kindly submit the form";
-    } else {
-      document.querySelector(".kyc-content h4").textContent =
-        "Please fix the errors before submitting";
-      form.reportValidity();
-    }
-  });
   document.querySelector(".reset").addEventListener("click", () => {
     form.reset();
     submitBtn.disabled = true;

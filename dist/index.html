@@ -48,11 +48,18 @@
                 type="text"
                 id="name"
                 required
-                minlength="6"
-                maxlength="15"
+                pattern="[A-Za-z\s]{3,50}"
+                title="Name should be 3-50 characters long and contain only letters and spaces."
+                placeholder="Your Name"
               />
               <label for="phone">Phone:</label>
-              <input type="tel" id="phone" pattern="[0-9]{10,11}" required />
+              <input
+                type="tel"
+                id="phone"
+                pattern="[0-9]{10,11}"
+                required
+                placeholder="############"
+              />
               <label for="email">Email:</label>
               <input type="email" id="email" />
               <button type="submit" id="pass-kyc" disabled>Submit</button>
