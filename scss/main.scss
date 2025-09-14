@@ -2,10 +2,10 @@
 // <weight>: Use a value from 200 to 800
 // Apply the unique class name to the desired elements
 // Importations
-@import 'config';
-@import 'utilities';
-@import 'item_grid';
-@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import "config";
+@import "utilities";
+@import "item_grid";
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 
 // General Styles
 
@@ -22,7 +22,7 @@ html {
 }
 body {
   background: $white-light;
-  font-family: 'Dosis', serif;
+  font-family: "Dosis", serif;
   font-optical-sizing: auto;
   font-style: normal;
   color: black;
@@ -82,7 +82,7 @@ h2,
 h3,
 h4 {
   text-transform: uppercase;
-  font-family: 'Raleway', serif;
+  font-family: "Raleway", serif;
   font-style: normal;
   margin: $rem 0 0;
   color: $main-color;
@@ -96,76 +96,76 @@ p {
   margin-bottom: 1.5rem;
 }
 
-// KYC 
+// KYC
 #kyc-container {
-  padding: 20px; 
+  padding: 20px;
   display: flex;
   height: 100vh;
   justify-content: center;
   align-items: center;
   text-align: center;
 
- & .kyc-fields {
-  & fieldset {
-    // border: none;
-    padding: 10px;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
-    legend {
-      font-size: 24px;
-      font-weight: bold;
-      margin-bottom: 10px;
-    }
-
-    p.small {
-      margin-bottom: 0;
-      font-size: x-small;
-    }
-
-    label {
-      font-size: 18px;
-      font-weight: bold;
-      text-align: left;
-    }
-    input,
-    select,
-    textarea {
+  & .kyc-fields {
+    & fieldset {
+      // border: none;
       padding: 10px;
-      border: 1px solid $dark-color;
-      border-radius: 5px;
-      width: 65%;
-    }
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
 
-    // input[type=text] {
-    //   width: 50%;
-    // }
+      legend {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+
+      p.small {
+        margin-bottom: 0;
+        font-size: x-small;
+      }
+
+      label {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: left;
+      }
+      input,
+      select,
+      textarea {
+        padding: 10px;
+        border: 1px solid $dark-color;
+        border-radius: 5px;
+        width: 65%;
+      }
+
+      // input[type=text] {
+      //   width: 50%;
+      // }
+    }
   }
- }
- & .kyc-actions {
-  margin: 10px 0; 
-  & button {
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    // background: $main-color;
-    color: $white-light;
-    cursor: pointer;
-    margin: 0 10px; 
+  & .kyc-actions {
+    margin: 10px 0;
+    & button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      // background: $main-color;
+      color: $white-light;
+      cursor: pointer;
+      margin: 0 10px;
+    }
   }
- }
 }
 // Welcome Message
 #welcome-message {
- padding: 20px;
- display: none;
+  padding: 20px;
+  display: none;
 }
 
 // Wrapper
 #wrapper {
-  display: none; 
+  display: none;
 }
 
 // Header
@@ -186,11 +186,11 @@ p {
         justify-content: space-between;
         padding: $rem 10px;
         color: $white-light;
-        font-family: 'Raleway', sans-serif;
+        font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
         position: relative;
-        top: -20%;
+        top: 10px;
 
         ul {
           display: flex;
@@ -279,7 +279,7 @@ p {
         justify-content: space-between;
         padding: $rem 10px;
         color: $white-light;
-        font-family: 'Raleway', sans-serif;
+        font-family: "Raleway", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
 
@@ -409,18 +409,18 @@ p {
     }
     // Background-Images
     & div.code {
-      background: $image-shade, url('../img/items/item10.jpg') $image-position;
+      background: $image-shade, url("../img/items/item10.jpg") $image-position;
     }
     & div.web {
-      background: $image-shade, url('../img/items/item2.png') $image-position;
+      background: $image-shade, url("../img/items/item2.png") $image-position;
       // Make this code boxes hidden on mobile.
     }
     & div.API {
-      background: $image-shade, url('../img/items/item5.png') $image-position;
+      background: $image-shade, url("../img/items/item5.png") $image-position;
       // Make this code boxes hidden on mobile.
     }
     & div.data {
-      background: $image-shade, url('../img/items/item11.jpg') $image-position;
+      background: $image-shade, url("../img/items/item11.jpg") $image-position;
       // Make this code boxes hidden on mobile.
     }
 
@@ -489,24 +489,24 @@ p {
         }
 
         & div.images span:first-child {
-          background: url('../img/items/item12.jpg') $image-position;
+          background: url("../img/items/item12.jpg") $image-position;
         }
         & div.images span:nth-child(2) {
-          background: url('../img/items/item13.jpg') $image-position;
+          background: url("../img/items/item13.jpg") $image-position;
         }
         & div.images span:last-child {
-          background: url('../img/items/item14.jpg') $image-position;
+          background: url("../img/items/item14.jpg") $image-position;
         }
 
         // Second Section
         & div.images2 span:first-child {
-          background: url('../img/items/item16.jpg') $image-position;
+          background: url("../img/items/item16.jpg") $image-position;
         }
         & div.images2 span:nth-child(2) {
-          background: url('../img/items/item17.jpg') $image-position;
+          background: url("../img/items/item17.jpg") $image-position;
         }
         & div.images2 span:last-child {
-          background: url('../img/items/item18.jpg') $image-position;
+          background: url("../img/items/item18.jpg") $image-position;
         }
       }
     }
@@ -679,14 +679,14 @@ p {
       }
 
       .accordion-button::after {
-        content: '\002B';
+        content: "\002B";
         font-weight: bold;
         float: right;
         margin-left: 5px;
       }
 
       .accordion-button.active::after {
-        content: '\2212';
+        content: "\2212";
         font-weight: bold;
       }
     }
@@ -699,8 +699,8 @@ p {
     .about-info {
       display: grid;
       grid-template-areas:
-        'bio-image bio bio'
-        'aw1 aw2 aw3';
+        "bio-image bio bio"
+        "aw1 aw2 aw3";
       grid-gap: 1.2rem;
     }
 
@@ -809,9 +809,9 @@ p {
     .text-fields {
       display: grid;
       grid-template-areas:
-        'name email'
-        'phone subject'
-        'message message';
+        "name email"
+        "phone subject"
+        "message message";
       grid-gap: 1.2rem;
       margin-bottom: 1.2rem;
 
@@ -837,7 +837,7 @@ p {
         padding: 0.5rem 1rem;
       }
     }
-    button[type='submit'] {
+    button[type="submit"] {
       width: 25%;
     }
   }
@@ -894,4 +894,4 @@ p {
 }
 
 // Mobile Import for media queries
-@import 'media';
+@import "media";

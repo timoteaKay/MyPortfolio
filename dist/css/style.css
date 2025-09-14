@@ -637,7 +637,7 @@ p {
   font-optical-sizing: auto;
   font-style: normal;
   position: relative;
-  top: -20%;
+  top: 10px;
 }
 #header-home .container #main-nav ul {
   display: flex;
