@@ -1,7 +1,6 @@
-.env
-.DS_Store
-.vscode/
-inspirations
-*.log
-.txt
-node_modules/
+# Ignore everything
+/*
+
+# But not these files/directories
+!.gitignore
+!dist/
