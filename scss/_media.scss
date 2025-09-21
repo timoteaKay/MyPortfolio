@@ -30,6 +30,11 @@
 
 // Smartphones
 @media (max-width: 500px) {
+  #welcome-message {
+    & .side-bar {
+      display: none;
+    }
+  }
   #header {
     &-home {
       .container {
@@ -124,7 +129,7 @@
           grid-template-columns: 1fr;
 
           & div.images span:first-child {
-            background: url('../img/items/item15.jpg') $image-position;
+            background: url("../img/items/item15.jpg") $image-position;
           }
           & div.images span:nth-child(2) {
             display: none;
@@ -135,7 +140,7 @@
 
           // Second Section
           & div.images2 span:first-child {
-            background: url('../img/items/item16.jpg') $image-position;
+            background: url("../img/items/item16.jpg") $image-position;
           }
           & div.images2 span:nth-child(2) {
             display: none;
@@ -174,11 +179,11 @@
       &-a {
         .about-info {
           grid-template-areas:
-            'bio-image'
-            'bio'
-            'aw1'
-            'aw2'
-            'aw3';
+            "bio-image"
+            "bio"
+            "aw1"
+            "aw2"
+            "aw3";
         }
       }
 
@@ -196,11 +201,11 @@
       &-a {
         .text-fields {
           grid-template-areas:
-            'name'
-            'subject'
-            'email'
-            'phone'
-            'message';
+            "name"
+            "subject"
+            "email"
+            "phone"
+            "message";
         }
       }
 
@@ -230,21 +235,21 @@
     &-a {
       .about-info {
         grid-template-areas:
-          'bio-image'
-          'bio'
-          'aw1' 'aw2' 'aw3';
+          "bio-image"
+          "bio"
+          "aw1" "aw2" "aw3";
       }
     }
 
-    &-c {
-      .about-logos {
-        grid-template-columns: repeat(2, 1fr);
+    // &-c {
+    //   .about-logos {
+    //     grid-template-columns: repeat(2, 1fr);
 
-        img {
-          width: 100%;
-        }
-      }
-    }
+    //     img {
+    //       width: 100%;
+    //     }
+    //   }
+    // }
     &-d {
       & .testimonials {
         & > div {
@@ -260,15 +265,15 @@
     &-a {
       .text-fields {
         grid-template-areas:
-          'name' 'email'
-          'phone' 'subject'
-          'message';
+          "name" "email"
+          "phone" "subject"
+          "message";
 
         .text-input {
           padding: 0.5rem;
         }
       }
-      button[type='submit'] {
+      button[type="submit"] {
         width: 100%;
       }
     }
@@ -384,11 +389,11 @@
         width: 100%;
 
         & .work-sample div.images2 span:first-child {
-          background: url('../img/items/item14.jpg') $image-position;
+          background: url("../img/items/item14.jpg") $image-position;
         }
 
         & .work-sample div.images span:nth-child(2) {
-          background: url('../img/items/item16.jpg') $image-position;
+          background: url("../img/items/item16.jpg") $image-position;
         }
         & .work-sample div.images2 span:last-child,
         & .work-sample div.images span:last-child {
@@ -445,13 +450,6 @@
   }
 
   #about {
-    &-a {
-      .about-info {
-        grid-template-areas:
-          'bio-image bio-image bio'
-          'aw1 aw2 aw3';
-      }
-    }
     &-d {
       .testimonials {
         grid-template-columns: repeat(2, 1fr);

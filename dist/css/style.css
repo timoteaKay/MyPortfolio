@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
 .preloader {
   position: fixed;
@@ -516,7 +515,7 @@ body.dark-mode {
   color: #fff;
 }
 body.dark-mode #header-home {
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/mewebg.jpg") no-repeat center right/cover;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/showcase5.jpg") no-repeat center right/cover;
 }
 body.dark-mode .section-title {
   color: #fff200;
@@ -619,7 +618,7 @@ p {
 }
 
 #header-home {
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/mewebg.jpg") no-repeat center right/cover;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/showcase5.jpg") no-repeat center right/cover;
   color: #fff;
 }
 #header-home .container {
@@ -693,7 +692,7 @@ p {
   line-height: 1em;
 }
 #header-inner {
-  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/mewebg.jpg") no-repeat 20% 30%/cover;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/showcase5.jpg") no-repeat 50% 50%/cover;
   height: auto;
   border-bottom: 3px solid #fff200;
 }
@@ -873,6 +872,9 @@ p {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+#home-b .showcase > div .gap {
+  margin-right: 20px;
+}
 #home-b .showcase > div div.images > span, #home-b .showcase > div div.images2 > span {
   display: block;
   background: #fff200;
@@ -1013,45 +1015,6 @@ p {
     opacity: 1;
   }
 }
-#home-c .accordion {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 30%;
-  margin: 30px 0 0;
-  padding: 20px;
-}
-#home-c .accordion .accordion-content {
-  display: none;
-  opacity: 0;
-  transition: opacity 5s ease-in-out;
-}
-#home-c .accordion .accordion-content.active {
-  opacity: 1;
-  display: block;
-}
-#home-c .accordion .accordion-button {
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  padding: 10px;
-  width: 100%;
-  text-align: left;
-  font-size: 16px;
-}
-#home-c .accordion .accordion-button:hover {
-  background-color: #f4f4f4;
-}
-#home-c .accordion .accordion-button::after {
-  content: "+";
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-#home-c .accordion .accordion-button.active::after {
-  content: "−";
-  font-weight: bold;
-}
 
 #about-a .about-info {
   display: grid;
@@ -1103,14 +1066,6 @@ p {
   height: 100%;
   background: #fff200;
   width: 0%;
-}
-#about-c .about-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 2rem;
-}
-#about-c .about-logos img {
-  width: 70%;
 }
 #about-d .testimonials {
   display: grid;
@@ -1227,6 +1182,9 @@ p {
   }
 }
 @media (max-width: 500px) {
+  #welcome-message .side-bar {
+    display: none;
+  }
   #header-home .container {
     padding: 0 3.5rem;
   }
@@ -1282,7 +1240,7 @@ p {
     width: 100%;
     height: auto;
     padding: 0 16px;
-    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/mewebg.jpg") no-repeat center left/cover;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.6) 100%), url("../img/showcase5.jpg") no-repeat center left/cover;
     color: #fff;
   }
   #home-b .stats div {
@@ -1354,12 +1312,6 @@ p {
   }
   #about-a .about-info {
     grid-template-areas: "bio-image" "bio" "aw1" "aw2" "aw3";
-  }
-  #about-c .about-logos {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  #about-c .about-logos img {
-    width: 100%;
   }
   #about-d .testimonials > div {
     margin: 15px 0;
@@ -1496,9 +1448,6 @@ p {
     100% {
       transform: translateX(100%);
     }
-  }
-  #about-a .about-info {
-    grid-template-areas: "bio-image bio-image bio" "aw1 aw2 aw3";
   }
   #about-d .testimonials {
     grid-template-columns: repeat(2, 1fr);

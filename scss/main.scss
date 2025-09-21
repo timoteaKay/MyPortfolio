@@ -262,7 +262,7 @@ p {
 
   // Header inner
   &-inner {
-    background: $image-shade, $bg-image no-repeat 20% 30% / cover;
+    background: $image-shade, $bg-image no-repeat 50% 50% / cover;
     height: auto;
     border-bottom: 3px solid $main-color;
 
@@ -478,6 +478,10 @@ p {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
 
+        & .gap {
+          margin-right: 20px;
+        }
+
         & div.images > span,
         & div.images2 > span {
           display: block;
@@ -644,52 +648,52 @@ p {
         }
       }
     }
-    & /* Accordion */
-    .accordion {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 30%;
-      margin: 30px 0 0;
-      padding: 20px;
+    // & /* Accordion */
+    // .accordion {
+    //   display: flex;
+    //   justify-content: center;
+    //   align-items: center;
+    //   height: 30%;
+    //   margin: 30px 0 0;
+    //   padding: 20px;
 
-      .accordion-content {
-        display: none;
-        opacity: 0;
-        transition: opacity 5s ease-in-out;
-      }
+    //   .accordion-content {
+    //     display: none;
+    //     opacity: 0;
+    //     transition: opacity 5s ease-in-out;
+    //   }
 
-      .accordion-content.active {
-        opacity: 1;
-        display: block;
-      }
+    //   .accordion-content.active {
+    //     opacity: 1;
+    //     display: block;
+    //   }
 
-      .accordion-button {
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 10px;
-        width: 100%;
-        text-align: left;
-        font-size: 16px;
-      }
+    //   .accordion-button {
+    //     background-color: transparent;
+    //     border: none;
+    //     cursor: pointer;
+    //     padding: 10px;
+    //     width: 100%;
+    //     text-align: left;
+    //     font-size: 16px;
+    //   }
 
-      .accordion-button:hover {
-        background-color: $light-color;
-      }
+    //   .accordion-button:hover {
+    //     background-color: $light-color;
+    //   }
 
-      .accordion-button::after {
-        content: "\002B";
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-      }
+    //   .accordion-button::after {
+    //     content: "\002B";
+    //     font-weight: bold;
+    //     float: right;
+    //     margin-left: 5px;
+    //   }
 
-      .accordion-button.active::after {
-        content: "\2212";
-        font-weight: bold;
-      }
-    }
+    //   .accordion-button.active::after {
+    //     content: "\2212";
+    //     font-weight: bold;
+    //   }
+    // }
   }
 }
 
@@ -762,17 +766,17 @@ p {
   }
 
   // About C
-  &-c {
-    .about-logos {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 2rem;
+  // &-c {
+  //   .about-logos {
+  //     display: grid;
+  //     grid-template-columns: repeat(4, 1fr);
+  //     grid-gap: 2rem;
 
-      img {
-        width: 70%;
-      }
-    }
-  }
+  //     img {
+  //       width: 70%;
+  //     }
+  //   }
+  // }
 
   // About D
   &-d {

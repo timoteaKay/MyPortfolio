@@ -1,4 +1,4 @@
-document.getElementById('wrapper').innerHTML = ` <!-- Header -->
+document.getElementById("wrapper").innerHTML = ` <!-- Header -->
       <header id="header-home" class="header-home">
         <div class="container">
           <nav id="main-nav">
@@ -21,8 +21,8 @@ document.getElementById('wrapper').innerHTML = ` <!-- Header -->
                   <i class="fab fa-github"></i>
                 </a></span>
               <span>
-                <a title="whatsapp" href="https://wa.link/a5phy5" target="_blank" rel="noopener noreferrer">
-                  <i class="fab fa-whatsapp"></i>
+                <a title="linkedIn" href="https://www.linkedin.com/in/timothy-triumph-41710a380?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+                  <i class="fab fa-linkedin"></i>
                 </a>
               </span>
             </p>
@@ -52,7 +52,7 @@ document.getElementById('wrapper').innerHTML = ` <!-- Header -->
           </div>
           <div class="specials">
             <!-- V-ERROR: The following container elements (div) were span elements
-            and the ul were also part of the good guys that produce an error of about 8 during validatation -->
+            and the ul were also part of the good guys that produce an error of about 8 during validation -->
             <div class="box py-2">
               <i class="fas fa-file-alt fa-2x swirl"></i>
               <h3 class="gradient-text">Conception</h3>
@@ -167,7 +167,7 @@ document.getElementById('wrapper').innerHTML = ` <!-- Header -->
           </div>
           <div class="showcase">
             <div>
-              <div class="work-sample">
+              <div class="work-sample gap">
                 <h3 class="gradient-text">Royal Returns</h3>
                 <p>
                   Royal Returns is a custom financial solution company that allows businesses to streamline their
@@ -327,6 +327,7 @@ document.getElementById('wrapper').innerHTML = ` <!-- Header -->
           </div>
         </div>
         <!-- REVIEW: -->
+        <!--
         <div class="accordion">
           <div class="accordion-item">
             <button class="accordion-button">
@@ -369,9 +370,9 @@ document.getElementById('wrapper').innerHTML = ` <!-- Header -->
               </ul>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     
       <!-- Footer -->
       <footer id="main-footer">
-      </footer>`
+      </footer>`;
